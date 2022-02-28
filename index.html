@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8"/>
+	<title>Groom Room</title>
+	<style>
+		#wrapper{
+			width:900px;
+			outline: 1px solid #000000;
+			padding: 10px;
+			margin: 0 auto;
+		}
+		#header{
+			position: relative;
+			width: 900px;
+			height: 200px;
+			background-color:#FFFFFF;
+			margin-bottom: 10px;
+			background-image: url('GroomRoom/assets/img/dop/s1200.jpg'); 
+		}
+		#sidebar{
+			background-color: #C0C0C0;
+			margin-bottom: 10px;
+			width: 180px;
+			padding: 10px;
+			float: right;
+		}
+		#content{
+			background-color: #808080;
+			margin-bottom: 10px;
+			width: 600px;
+			padding: 10px;
+		}
+		#footer {
+			height: 80px;
+			background-color: #FFA07A;
+			margin-bottom: 10px;
+		}
+		.clesr{
+			clear: both;
+		}
+		h1{
+			color: #000000;
+			font:40px Georgia;
+			margin-left: 300px;
+		}
+		.descript{
+			width: 300px;
+			color: #000000;
+			font-style: italic;
+			margin:70px 0 0 30px;
+			font-size: 22px;
+		}
+		img{
+			position: absolute;
+			top:10px;
+			left: 10px;
+		}
+
+	</style>
+	<link rel="stylesheet" type="text/css" href="GroomRoom\css\main.css">
+</head>
+<body>
+<div id="wrapper">
+	<div id="header">
+	<H1>Groom Room</H1>
+	<p class="descript">Уход за вашими питомцами</p>
+	<img src="GroomRoom/assets/img/GR.png" width="75px" height="75px">
+</div>
+<div id="sidebar"> Здравствуйте, уважаемые клиенты.Наша парикмахерская не только приведет в радость вас и питомцев,но и есть возможность участия в конкурсе "Осенняя кокетка" и выиграть приз  100000 рублей!
+	</div>
+	<div id="content">Запись на участие в конкурсе ведется с 01.09.21 по 10.11.21. Подать заявку на участие в конкурсе можете в личном кабинете.
+	</div>
+	<div class="clear">
+		
+	</div>
+
+<!--форма авторизации-->
+<form>
+<lable>логин</lable>
+<input type="text" name="login" placeholder="Введите свой логин">
+<lable>пароль</lable>
+<input type="password" name="password" placeholder="Введите пароль ">
+<button type ="submit">Войти</button>
+<p>
+У вас нет аккаунта?-<a href="register.html">Зарегестрируйтесь</a>!
+</p>
+</form>
+<title>Авторизация и регистрация</title>
+<link rel="stylesheet" href="main.css">
+</head>
+<!--форма авторизации-->
+<form action="vendor/signup.php" method="post" enctype="multipart/form-data">
+<lable>ФИО</lable>
+<input type="text" name="full_name" placeholder="Введите свое полное имя">
+<lable>логин</lable>
+<input type="text" name="login" placeholder="Введите свой логин ">
+<lable>почта</lable>
+<input type="email" name="email" placeholder="Введите адрес своей почты">
+<lable>изображение профиля</lable>
+<input type="file" name="avatar">
+<lable>пароль</lable>
+<input type="password" name="password" placeholder="Введите пароль">
+<lable>подтверждение пароля</lable>
+<input type="password" name="password_confirm" placeholder="подтвердите пароль">
+<button type="submit">Войти</button>
+<p>
+У вас уже есть аккаунт?-<a href="index.html">авторизируйтесь</a>!
+</p>
+<div style="background-color:#DB7093 ;
+	 text-align: center;
+	 padding: 15px;">
+	 <b>GrRo.ru</b>
+	</div>
+</div>
+</form>
+</body>
+</html>
